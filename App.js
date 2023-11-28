@@ -50,14 +50,14 @@ const App = () => {
   };
 
   return (
-    <View style={Styles.root}>
-      <View style={Styles.displayContainer}>
-        <Text style={Styles.displayText}>Answer</Text>
-        <Text style={Styles.displayAns}>{value}</Text>
+    <View style={styles.root}>
+      <View style={styles.displayContainer}>
+        <Text style={styles.displayText}>Answer</Text>
+        <Text style={styles.displayAns}>{value}</Text>
         <TextInput
           value={num1}
           onChangeText={setNum1}
-          style={Styles.input}
+          style={styles.input}
           placeholder="Enter the first number"
           placeholderTextColor="#7754D6"
           keyboardType="number-pad"
@@ -65,25 +65,25 @@ const App = () => {
         <TextInput
           value={num2}
           onChangeText={setNum2}
-          style={Styles.input}
+          style={styles.input}
           placeholder="Enter the second number"
           placeholderTextColor="#7754D6"
           keyboardType="number-pad"
         />
-        <View style={Styles.buttonContainer}>
-          <View style={Styles.button}>
+        <View style={styles.buttonContainer}>
+          <View style={styles.button}>
             <Button title="Add" color="#7754D6" onPress={addNum} />
           </View>
-          <View style={Styles.button}>
+          <View style={styles.button}>
             <Button title="Subtract" color="#7754D6" onPress={subNum} />
           </View>
-          <View style={Styles.button}>
+          <View style={styles.button}>
             <Button title="Multiply" color="#7754D6" onPress={mulNum} />
           </View>
-          <View style={Styles.button}>
+          <View style={styles.button}>
             <Button title="Divide" color="#7754D6" onPress={divNum} />
           </View>
-          <View style={Styles.button}>
+          <View style={styles.button}>
             <Button title="Clear" color="#7754D6" onPress={clearNum} />
           </View>
         </View>
@@ -92,7 +92,7 @@ const App = () => {
   );
 };
 
-const Styles = StyleSheet.create({
+const styles = StyleSheet.create({
   root: {
     flex: 1,
     backgroundColor: "#1E0F3E",
